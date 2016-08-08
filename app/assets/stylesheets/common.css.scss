@@ -1,0 +1,16 @@
+$base_font_size: 18px;
+$base_font_color: #555555;
+
+@import url('//fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700');
+
+body {
+  font-family:
+    'ヒラギノ明朝 ProN W3',
+    'Hiragino Mincho ProN',
+    'HG明朝E',
+    'ＭＳ Ｐ明朝',
+    'ＭＳ 明朝',
+    serif;
+  font-size: $base_font_size;
+  color: $base_font_color;
+}
