@@ -1,5 +1,6 @@
 $base_font_size: 18px;
 $base_font_color: #555555;
+$link_hover_color: #e01090;
 
 @import url('//fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700');
 
@@ -15,11 +16,62 @@ body {
   color: $base_font_color;
 }
 
+header {
+  a {
+    color: $base_font_color;
+    text-decoration: none;
+
+    &:hover {
+      color: $link_hover_color;
+    }
+  }
+
+  h1 {
+    margin: 0;
+    text-align: center;
+  }
+
+  nav {
+    margin-top: 16px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    ul {
+      width: 80%;
+      margin: 0;
+      padding: 0;
+    }
+
+    li {
+      width: calc(100% / 3);
+      text-align: center;
+      list-style: none;
+      display: inline-block;
+    }
+  }
+}
+
 @media screen and (min-width: 768px) {
   $width: 768px;
+
+  body {
+    margin-top: 24px;
+  }
 
   header, article {
     width: $width;
     margin: 0 auto;
+  }
+
+  header {
+    display: flex;
+    justify-content: left;
+
+    h1 {
+      width: 70%;
+      text-align: left;
+      display: inline-block;
+    }
   }
 }
