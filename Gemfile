@@ -46,6 +46,7 @@ group :development, :test do
   gem 'guard-rubocop'
   gem 'guard-rspec'
   gem 'terminal-notifier-guard'
+  gem 'factory_girl_rails'
 end
 
 group :development do
