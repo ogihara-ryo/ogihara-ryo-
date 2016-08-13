@@ -14,5 +14,7 @@
 
 Rails.application.routes.draw do
   root 'welcome#index'
+  get 'profile', to: 'welcome#profile'
+  get 'tech', to: 'welcome#tech'
   resources :blogs
 end

@@ -7,4 +7,18 @@ RSpec.describe WelcomeController, type: :controller do
       expect(response).to have_http_status(:success)
     end
   end
+
+  describe 'GET #index' do
+    it 'returns http success' do
+      get :profile
+      expect(response).to have_http_status(:success)
+    end
+  end
+
+  describe 'GET #index' do
+    it 'returns http success' do
+      get :tech
+      expect(response).to have_http_status(:success)
+    end
+  end
 end
