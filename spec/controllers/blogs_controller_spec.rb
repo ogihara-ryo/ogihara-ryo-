@@ -23,11 +23,11 @@ RSpec.describe BlogsController, type: :controller do
   # Blog. As you add validations to Blog, be sure to
   # adjust the attributes here as well.
   let(:valid_attributes) {
-    skip('Add a hash of attributes valid for your model')
+    { title: 'title', body: 'body' }
   }
 
   let(:invalid_attributes) {
-    skip('Add a hash of attributes invalid for your model')
+    { title: nil, body: nil }
   }
 
   # This should return the minimal set of values that should be in the session
@@ -102,14 +102,15 @@ RSpec.describe BlogsController, type: :controller do
   describe 'PUT #update' do
     context 'with valid params' do
       let(:new_attributes) {
-        skip('Add a hash of attributes valid for your model')
+        { title: 'update title', body: 'update body' }
       }
 
       it 'updates the requested blog' do
         blog = Blog.create! valid_attributes
         put :update, params: { id: blog.to_param, blog: new_attributes }, session: valid_session
         blog.reload
-        skip('Add assertions for updated state')
+        expect(blog.title).to eq 'update title'
+        expect(blog.body).to eq 'update body'
       end
 
       it 'assigns the requested blog as @blog' do
