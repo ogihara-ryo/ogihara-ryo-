@@ -42,6 +42,7 @@ group :development, :test do
   gem 'spring-watcher-listen', '~> 2.0.0'
   gem 'spring-commands-rspec'
 
+  gem 'dotenv-rails'
   gem 'rspec-rails'
   gem 'guard'
   gem 'guard-rubocop'
