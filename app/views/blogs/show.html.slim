@@ -1,12 +1,9 @@
-p#notice = notice
+= provide :title, @blog.title
 
-p
-  strong Title:
-  = @blog.title
-p
-  strong Body:
-  = @blog.body
+h1 = link_to @blog.title, @blog
+span.date-time = l(@blog.created_at)
 
-= link_to 'Edit', edit_blog_path(@blog)
-'|
-= link_to 'Back', blogs_path
+== markdown_to_html(@blog.body, { tables: true, fenced_code_blocks: true }, { filter_html: true })
+
+p = link_to 'Back', blogs_path
+p = link_to '編集', edit_blog_path(@blog) if signed_in?
