@@ -1,0 +1,10 @@
+#blog_list
+  ul
+    - Blog.order(created_at: :desc).each do |blog|
+      li
+        h1 = link_to blog.title, blog_path(blog)
+        span.date-time
+          | Posted on&nbsp;
+          = l blog.created_at
+
+= link_to '新規', new_blog_path if signed_in?
