@@ -1,5 +1,5 @@
 class BlogsController < ApplicationController
-  before_action :signin_required, only: %i(new create edit update destroy)
+  before_action :sign_in_required, only: %i(new create edit update destroy)
   before_action :set_blog, only: %i(show edit update destroy)
 
   # GET /blogs

@@ -5,7 +5,7 @@ class ApplicationController < ActionController::Base
 
   private
 
-  def signin_required
+  def sign_in_required
     return if signed_in?
     set_request_from
     redirect_to sign_in_path
