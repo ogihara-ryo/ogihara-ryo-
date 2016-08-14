@@ -1,6 +1,7 @@
 $base_font_size: 18px;
 $base_font_color: #555555;
 $link_hover_color: #e01090;
+$thin_font_color: #a4a4a4;
 
 $border_color: #444;
 $break_border_color: #eaeaea;
@@ -81,6 +82,30 @@ header {
       display: inline-block;
     }
   }
+}
+
+#blog_list {
+  ul {
+    padding: 0;
+  }
+
+  li {
+    list-style: none;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid $break_border_color;
+
+    h1 {
+      line-height: 1.2;
+      margin: 0;
+    }
+  }
+}
+
+span.date-time {
+  font-size: 80%;
+  text-align: left;
+  color: $thin_font_color;
 }
 
 @media screen and (min-width: 768px) {
