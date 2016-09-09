@@ -247,6 +247,7 @@ PLATFORMS
 DEPENDENCIES
   annotate
   byebug
+  coderay
   coffee-rails (~> 4.2)
   dotenv-rails
   factory_girl_rails
