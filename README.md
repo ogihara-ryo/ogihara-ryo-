@@ -43,7 +43,7 @@ $ rspec spec/
 
 ## Deployment
 
-If you change the master branch, it will be deployed to [http://ogihara-ryo.herokuapp.com](ogihara-ryo.herokuapp.com) automatically by [wercker](http://wercker.com)
+If you change the master branch, it will be deployed to [ogihara-ryo.herokuapp.com](http://ogihara-ryo.herokuapp.com) automatically by [wercker](http://wercker.com)
 
 
 ## Author
