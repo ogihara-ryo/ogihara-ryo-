@@ -16,7 +16,7 @@ Since I can't write in English, I have to practice English in this README and co
 ## Requirement
 
 - Ruby 2.3.1
-- Rails 5.0.0
+- Rails 5.0.0.1
 
 It will follow the latest version
 
