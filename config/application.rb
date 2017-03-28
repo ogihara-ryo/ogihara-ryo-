@@ -24,6 +24,7 @@ module OgiharaRyo
 
     config.title = 'Ogihara Ryo'
 
+    config.time_zone = 'Tokyo'
     config.i18n.default_locale = :ja
 
     config.generators do |g|
